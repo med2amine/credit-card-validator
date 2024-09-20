@@ -1,0 +1,27 @@
+print('credit card validator programme : ' )
+credit_card = input('give the number of your credit card : ')
+l = list(credit_card)
+for digits in l :
+  if digits == '-' or digits == ' ':
+  l.remove(digits)
+m = []
+for digits in l :
+  digit = int(digits)
+  m.append(digit)
+sum_ood_digits = 0
+sum_even_digits = 0
+total
+m.reverse()
+for i in m[::2]:
+  sum_ood_digits += i
+for j in m[1::2]:
+  j = j*2
+  if j >= 10 :
+    sum_even_number += (1 + ( j%10))
+  else : 
+    sum_even_number += j
+total = sum_even_number + sum_ood_number
+if total % 10 == 0 :
+  print('the credit card is valid')
+else : 
+  print('the credit card is not valid')
